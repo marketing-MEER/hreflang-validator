@@ -1,0 +1,3 @@
+http://localhost:8000/en/pricing.html
+http://localhost:8000/en/features.html
+http://localhost:8000/en/about.html

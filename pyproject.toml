@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hreflang-validator"
+version = "1.0.0"
+description = "Check hreflang return links, codes, x-default and canonical conflicts"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Meer Hamza", email = "meerhamza5@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = ["requests>=2.28", "beautifulsoup4>=4.11", "pandas>=1.5", "openpyxl>=3.1", "click>=8.1"]
+keywords = ["seo", "hreflang", "validator"]
+
+[project.urls]
+Homepage = "https://github.com/marketing-MEER/hreflang-validator"
+"SEO Toolbox" = "https://github.com/marketing-MEER/seo-toolbox"
+LinkedIn = "https://www.linkedin.com/in/meerhamza-seo"
+
+[project.scripts]
+hreflang-validator = "hreflang_validator.cli:main"
+
+[tool.setuptools]
+packages = ["hreflang_validator"]
